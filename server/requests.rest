@@ -1,0 +1,28 @@
+###
+GET http://localhost:5000/users
+
+###
+POST http://localhost:5000/user
+Content-Type: application/json
+
+
+{
+    "username":"test2",
+    "email":"test2",
+    "password":"test2"
+}
+
+###
+PUT http://localhost:5000/update/test2
+Content-Type: application/json
+
+
+{
+    "username":"test2",
+    "email":"updated",
+    "password":"updated"
+}
+
+
+###
+DELETE http://localhost:5000/delete/test2
